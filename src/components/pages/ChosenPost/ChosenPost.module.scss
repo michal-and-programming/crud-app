@@ -1,0 +1,17 @@
+@import '../../../styles/settings.scss';
+
+.chosenPostWrapper{
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+
+  button{
+    margin-right: 10px;
+  }
+}
+
+.chosenPostContent{
+  span{
+    color: $color-grey;
+  }
+}
