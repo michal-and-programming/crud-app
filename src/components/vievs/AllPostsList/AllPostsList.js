@@ -10,7 +10,7 @@ const AllPostsList = ({title, author, publishedDate, shortDescription, id}) => {
       <h4>Published: <span>{publishedDate}</span></h4>
       <p><span>{shortDescription}</span></p>
       <Link to={`/post/${id}`}>
-        <Button>Read more</Button>
+        <Button type="button" className="btn btn-primary">Read more</Button>
       </Link>
     </div>
   )

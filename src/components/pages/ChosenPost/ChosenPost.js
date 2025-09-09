@@ -7,6 +7,7 @@ import styles from './ChosenPost.module.scss';
 import ModalViev from "../../vievs/ModalViev/ModalViev";
 import { useState } from "react";
 import { deletePost } from "../../../redux/postsRedux";
+import Button from '../../common/Button/Button';
 
 const ChosenPost = () => {
   const params = useParams();
@@ -38,9 +39,9 @@ const ChosenPost = () => {
           </div>
           <div>
             <Link to={`/post/edit/${id}`}>
-              <button className="btn btn-outline-primary">Edit</button>
+              <Button className="btn btn-outline-primary">Edit</Button>
             </Link>
-            <button className="btn btn-outline-danger" onClick={handleDelete}>Delete</button>
+            <Button className="btn btn-outline-danger" onClick={handleDelete}>Delete</Button>
           </div>
         </Container>
         <ModalViev show={showModal} close={closeModal} deletePost={chosenDeletePost}/>

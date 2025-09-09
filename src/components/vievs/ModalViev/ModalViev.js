@@ -1,5 +1,5 @@
-import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
+import Button from '../../common/Button/Button';
 
 const ModalViev= ({show, close, deletePost}) => {
   return (
@@ -17,8 +17,8 @@ const ModalViev= ({show, close, deletePost}) => {
         </Modal.Body>
 
         <Modal.Footer>
-          <Button variant="secondary" onClick={close}>Cancel</Button>
-          <Button variant="danger" onClick={deletePost}>Remove</Button>
+          <Button className="btn btn-secondary" onClick={close}>Cancel</Button>
+          <Button className="btn btn-danger" onClick={deletePost}>Remove</Button>
         </Modal.Footer>
       </Modal>
     </div>
